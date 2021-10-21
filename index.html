@@ -1,0 +1,124 @@
+<!-- Create your html boilerplate in the index.html file -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bonus: Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add a new file called `styles.css` and link it to the HTML file -->
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <title>Fashion Blog</title>
+  </head>
+  <body>
+    <!-- In the body of your HTML, use `header`, `main` and `footer` tags to clearly define the different parts of the page -->
+    <header>
+      <!-- Use an `h1` tag for the site title and an `h2` for the subtitle inside the page header -->
+      <h1>Sartre's List</h1>
+
+      <h2>Better-Dressed People</h2>
+
+      <!-- use `nav` tags inside the page header to create an accessible navigation. Follow the example in the *W3C Web Accessibility Iniative (WAI) Guidelines* to format your navigation:
+        1. Wrap each link in an anchor tag
+        2. Wrap each anchor tag in a list item
+        3. Wrap all the list item tags in an unordered list tag
+        4. Place the unordered list inside the `nav` tag and give it attributes for `aria-label="main Navigation"` and `role="navigation"`
+    
+            * https://www.w3.org/WAI/tips/developing/#provide-meaning-for-non-standard-interactive-elements
+        -->
+      <nav>
+        <ul class="navbar" aria-label="Main Navigation" role="navigation">
+          <li><a href="#">Women's</a></li>
+          <li><a href="#">Man's</a></li>
+          <li><a href="#">On the Street</a></li>
+          <li><a href="#">The Catwalk</a></li>
+          <li><a href="#">AdWatch</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Mark up both of the blog posts using the `article` tag -->
+
+      <!-- Use this *W3C WAI Guideline* example, to help you structure your blog post content. Follow the pattern! Make sure there is a `p` tag that contains some lorem ipsum text (Remember you can create this with Emmet by typing `p>lorem` and pressing tab)!
+
+        * https://www.w3.org/WAI/tips/developing/#use-mark-up-to-convey-meaning-and-structure
+    -->
+
+      <article>
+        <time datetime="2013-11-12">11/12/13</time>
+        <h2 class="post-title">On the Street in Brooklyn</h2>
+
+        <!-- Make sure your images all have `alt` attributes so that they are accessible -->
+        <img
+          src="./imgs/blog-image-1.jpg"
+          alt="Woman walking down a sidewalk"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          accusantium maxime tempore, explicabo ex iusto perferendis enim labore
+          magnam facere, libero sed, rerum incidunt numquam in architecto
+          perspiciatis! Nisi minus quos sint. Maxime aliquid consequuntur saepe
+          quisquam reprehenderit quasi odit iste modi? Id, optio excepturi
+          dolore laboriosam provident similique veritatis! A nam ullam
+          dignissimos maxime. Ea odit adipisci porro maiores doloremque quos
+          sequi qui soluta iusto laudantium, necessitatibus corrupti illo, illum
+          similique perspiciatis quis delectus nostrum ad ab atque voluptates,
+          quae tempora quibusdam aut! Inventore impedit quos delectus id
+          deleniti debitis corrupti doloribus minima. Perferendis placeat quasi
+          nemo aliquid alias.
+        </p>
+        <aside>
+          <a href="#">Continues...</a>
+        </aside>
+      </article>
+      <article>
+        <time datetime="2013-11-11">11/11/13</time>
+        <h2 class="post-title">Vintage in Vogue</h2>
+        <img src="./imgs/blog-image-2.jpg" alt="Group of people" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          cumque minima explicabo aliquam id mollitia quas aspernatur ipsam
+          ratione! Ratione, consequatur ea. Earum placeat autem, at, voluptas
+          debitis porro expedita provident deleniti voluptatum asperiores dolore
+          incidunt animi magni mollitia! Officiis facilis blanditiis accusantium
+          sapiente sint architecto illo deserunt! Fugiat dolore quae asperiores
+          voluptates inventore dolores iure molestias deleniti illum! Alias
+          consectetur architecto laborum incidunt ipsum placeat at delectus
+          provident esse magni iste illo recusandae voluptate molestiae ut id,
+          perferendis sint quisquam doloremque vero nesciunt a deserunt? Nam
+          impedit vel modi eos doloremque, consequuntur at officia adipisci
+          rerum soluta itaque dolorem.
+        </p>
+        <aside>
+          <a href="#">Continues...</a>
+        </aside>
+      </article>
+    </main>
+    <footer>
+      <!-- Inside the page footer, use the same technique you used earlier to create a semantic accessible navigation, usiong wrapping `nav` tag, unordered list and the aria attributes. -->
+      <nav>
+        <ul class="navbar" aria-label="Main Navigation" role="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Women's</a></li>
+          <li><a href="#">Man's</a></li>
+          <li><a href="#">On the Street</a></li>
+          <li><a href="#">The Catwalk</a></li>
+          <li><a href="#">AdWatch</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Tips</a></li>
+        </ul>
+      </nav>
+      <!-- Add a copyright in the footer. For the &copy; symbol, usa an *html entity*
+    
+        * https://www.w3schools.com/html/html_entities.asp-->
+      <p class="copyright">&copy; 2021 Filipe Marques</p>
+    </footer>
+  </body>
+</html>
