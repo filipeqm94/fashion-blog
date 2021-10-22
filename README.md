@@ -2,7 +2,7 @@
 
 # To Do:
 
-1. Add mobile responsiveness
+- [ ] Add mobile responsiveness
 
 # Fashion Blog
 
